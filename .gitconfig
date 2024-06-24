@@ -1,0 +1,25 @@
+[user]
+	name = Ollie
+	email = github@ollie2304.co.uk
+	signingkey = /home/ollie/.ssh/github_com_ed25519.pub
+	username = Ollie2304
+[color]
+	ui = auto
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
+[tag]
+	gpgsign = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
