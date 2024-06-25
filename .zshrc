@@ -48,7 +48,7 @@ zstyle ':omz:update' frequency 13
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -129,3 +129,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 autoload -U compinit
 compinit
 fpath=($fpath ~/.zsh/_nnn)
+
+export PATH=$PATH:/home/ollie/.spicetify
