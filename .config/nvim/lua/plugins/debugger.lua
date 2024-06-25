@@ -2,11 +2,24 @@ return {
     "mfussenegger/nvim-dap",
     dependencies = {
         "rcarriga/nvim-dap-ui",
-        "nvim-neotest/nvim-nio"
+        "nvim-neotest/nvim-nio",
+        "williamboman/mason.nvim",
+        "jay-babu/mason-nvim-dap.nvim"
+
     },
     config = function ()
         local dap = require("dap")
         local dapui = require("dapui")
+
+        require("mason-nvim-dap").setup{
+            automatic_installation = true,
+            handlers = {},
+        }
+        vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {desc = "Debug: Toggle Breakpoint"})
+        vim.keymap.set("n", "<Leader>dc", dap.continue, {desc = "Debug: Start/Continue"})
+        vim.keymap.set("n", "<Leader>ds", dap.step_over, {desc = "Debug: Step Over"})
+        vim.keymap.set("n", "<Leader>di", dap.step_into, {desc = "Debug: Step Into"})
+        vim.keymap.set("n", "<Leader>do", dap.step_out, {desc = "Debug: Step Out"})
 
         require("dapui").setup()
 
@@ -42,10 +55,5 @@ return {
             },
         }
 
-        vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {})
-        vim.keymap.set("n", "<Leader>dc", dap.continue, {})
-        vim.keymap.set("n", "<Leader>ds", dap.step_over, {})
-        vim.keymap.set("n", "<Leader>di", dap.step_into, {})
-        vim.keymap.set("n", "<Leader>do", dap.step_out, {})
     end
 }
