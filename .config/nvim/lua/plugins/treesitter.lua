@@ -11,6 +11,8 @@ return {
                 "markdown_inline",
                 "javascript",
                 "c_sharp",
+                "html",
+                "css",
                 "python",
                 "hyprlang",
             },

@@ -59,7 +59,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
 
 
-vim.opt.colorcolumn = "80"
+--vim.opt.colorcolumn = "80"
 
 -- enable nerd font
 vim.g.have_nerd_font = true
@@ -79,4 +79,3 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- shows which line cursor is on
 vim.opt.cursorline = true
-
