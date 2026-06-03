@@ -1,0 +1,66 @@
+# paru
+alias pi="paru -S"                 # install
+alias ps="paru --bottomup -Ss"     # search
+alias pu="paru -Syu"               # update
+alias pr="paru -R"                 # remove
+alias prd="paru -Rs"               # remove dep
+alias prdc="paru -Rns"             # remove dep conf
+alias pro="paru -Rns $(paru -Qtdq)"   # remove orph
+alias pls="paru -Ql"               # list packages installed by another
+alias plsa="paru -Qe"              # list all packages
+
+# git
+alias gi="git init"
+alias gcl="git clone"
+alias gs="git status --short"
+alias ga="git add"
+alias gap="git add --patch"
+alias gc="git commit"
+alias gp="git push"
+alias gu="git pull"
+alias gb="git branch"
+alias gd="git diff"
+alias gco="git checkout"
+alias gl="git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n'"
+
+# jujutsu
+alias ji="jj init"
+alias js="jj st"
+alias jn="jj new"
+alias jnx="jj next"
+alias jd="jj describe"
+alias jc="jj commit"
+alias jsq="jj squash"
+alias ja="jj abandon"
+alias je="jj edit"
+alias jbm="jj bookmark move main --to @-"
+alias jp="jj git push"
+alias jcl="jj git clone"
+
+# ls
+alias ls="ls --color=auto"
+alias la="ls -a --color=auto"
+
+# tmux
+alias tn="tmux new-session -s"
+alias tl="tmux list-sessions"
+alias ta="tmux attach-session"
+
+
+# systemd
+alias sd="sudo systemctl"
+alias sdu="systemctl --user"
+alias jd="journalctl --no-pager"
+
+# files
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rf="rm -rfv"
+alias rm="rm -vi"
+
+# vim
+alias vim="nvim"
+alias vi="\vim"
+
+# zsh
+alias so="source ~/.zshrc"
