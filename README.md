@@ -13,5 +13,5 @@
  - Display: kanshi
  - Keybinds: kanata
  - IME: fcitx5 (mozc)
- - Images: sawyimg
+ - Images: swayimg
  - Video: mpv
