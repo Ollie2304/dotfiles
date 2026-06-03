@@ -1,0 +1,70 @@
+[user]
+    name = Oliver Boulton
+    email = github@ollie2304.co.uk
+	signingkey = E3CF5ECA6AD2FE22
+    username = Ollie2304
+[core]
+    compression = 9
+    whitespace = error
+    preloadindex = true
+    editor = nvim
+[color]
+    ui = auto
+[push]
+    autoSetupRemote = true
+    default = current
+    followTags = true
+[pull]
+    rebase = true
+    default = current
+[rebase]
+    autoStash = true
+    missingCommitsCheck = warn
+[init]
+    defaultBranch = main
+[status]
+    branch = true
+    showStash = true
+[log]
+    abbrevCommit = true
+    graphColors = blue,yellow,cyan,magenta,green,red
+[diff]
+    context = 3
+    renames = copies
+    interHunkContext = 10
+[branch]
+    sort = -committerdate
+[tag]
+    sort = -taggerdate
+[color "diff"]
+    meta = black bold
+    frag = magenta
+    context = white
+    whitespace = yellow reverse
+    old = red
+[color "decorate"]
+    HEAD = red
+    branch = blue
+    tag = yellow
+    remoteBranch = magenta
+[color "branch"]
+    current = magenta
+    local = default
+    remote = yellow
+    upstream = green
+    plain = blue
+[pager]
+    diff = diff-so-fancy | $PAGER
+[diff-so-fancy]
+    markEmptyLines = false
+[interactive]
+    diffFilter = diff-so-fancy --patch
+    singlekey = true
+[commit]
+    gpgsign = true
+[tag]
+    gpgsign = true
+[url "git@github.com:Ollie2304/"]
+    insteadOf = "o:"
+[url "git@github.com:"]
+    insteadOf = "gh:"
