@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<labwc_config>
+
+    <core>
+        <gap>8</gap>
+
+    </core>
+
+    <keyboard>
+        <default />
+
+        <keybind key="W-Return">
+            <action name="Execute" command="foot" />
+        </keybind>
+
+        <keybind key="A-Space">
+            <action name="Execute" command="fuzzel" />
+        </keybind>
+
+        <keybind key="W-q">
+            <action name="Close" />
+        </keybind>
+        <keybind key="W-S-s">
+            <action name="Execute"
+                command="~/.config/labwc/custom/screenshot-region.sh" />
+        </keybind>
+        <keybind key="W-C-s">
+            <action name="Execute"
+                command="~/.config/labwc/custom/screenshot-edit.sh" />
+        </keybind>
+        <keybind key="W-v">
+            <action name="Execute"
+                command="cliphist list | fuzzel --dmenu --with-nth 2 | cliphist decode | wl-copy" />
+        </keybind>
+
+
+    </keyboard>
+
+    <mouse>
+        <default />
+    </mouse>
+
+    <windowSwitcher>
+        <osd output="cursor" thumbnailLabelFormat="%T" />
+        <fields>
+            <field content="icon" width="5%" />
+            <field content="desktop_entry_name" width="30%" />
+            <field content="title" width="65%" />
+        </fields>
+    </windowSwitcher>
+
+    <desktops>
+        <initial>Workspace 1</initial>
+        <names>
+            <name>Workspace 1</name>
+            <name>Workspace 2</name>
+            <name>Workspace 3</name>
+        </names>
+    </desktops>
+
+    <windowRules>
+        <windowRule identifier="*">
+            <action name="SetDecorations" decorations="border" />
+        </windowRule>
+    </windowRules>
+
+
+    <theme>
+        <name>oxo</name>
+    </theme>
+
+</labwc_config>

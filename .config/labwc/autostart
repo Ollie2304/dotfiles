@@ -1,0 +1,9 @@
+dbus-update-activation-environment --systemd DISPLAY XAUTHORITY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc &
+gnome-keyring-daemon --start --components=secrets &
+/usr/lib/xdg-desktop-portal-wlr &
+wl-paste --watch cliphist store &
+kanshi &
+kanata &
+ironbar &
+mako &
+
