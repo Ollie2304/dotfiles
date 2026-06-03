@@ -1,0 +1,16 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[user]
+name = "Oliver Boulton"
+email = "github@ollie2304.co.uk"
+
+[ui]
+editor = "nvim"
+default-command = "log"
+
+[git]
+sign-on-push = true
+
+[signing]
+backend = "gpg"
+key = "E3CF5ECA6AD2FE22"
