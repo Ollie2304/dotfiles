@@ -1,0 +1,47 @@
+{
+    "monitors": {
+        "DP-4": {
+            "position": "top",
+            "height": 20,
+            "margin.top": 10,
+            "margin.left": 10,
+            "margin.right": 10,
+            "start": [
+                {
+                    "type": "menu",
+                    "label": "",
+                    "start": [
+                        {
+                            "type": "custom",
+                            "label": "Shutdown",
+                            "on_click": "systemctl poweroff"
+                        }
+                    ],
+                    "center": [],
+                    "end": []
+                }
+            ],
+            "center": [
+                {
+                    "type": "workspaces"
+                }
+            ],
+            "end": [
+                {
+                    "type": "tray"
+                },
+                {
+                    "type": "volume",
+                    "format": "{icon} {percentage}%",
+                    "max_volume": 100,
+                    "show_sources": false
+                },
+                {
+                    "type": "clock",
+                    "format": "%H:%M"
+                }
+            ]
+
+        }
+    }
+}

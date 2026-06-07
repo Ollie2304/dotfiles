@@ -1,0 +1,9 @@
+font=BerkeleyMono 12
+background-color=#212121
+border-size=1
+border-radius=0
+border-color=#9B9B9B
+text-color=#9B9B9B
+icons=1
+text-alignment=left
+default-timeout=5000
