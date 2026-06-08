@@ -8,7 +8,7 @@ DIRS=(
 )
 FZF_OPTS=(
     --popup center
-    --style minimal
+    --no-preview
     --border-label "Sessions"
 )
 FD_OPTS=(
