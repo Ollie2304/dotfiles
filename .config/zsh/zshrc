@@ -87,6 +87,9 @@ function y() {
 	command rm -f -- "$tmp"
 }
 
+# editor
+export EDITOR=nvim
+
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
