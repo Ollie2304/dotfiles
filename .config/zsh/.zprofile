@@ -22,6 +22,7 @@ export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
 # add scripts to path
 export PATH="$XDG_CONFIG_HOME/scripts:$PATH"
 
+export RIPGREP_CONFIG_PATH=$XDG_CONFIG_HOME/ripgrep/config
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
