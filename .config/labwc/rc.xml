@@ -17,7 +17,7 @@
             <action name="Execute" command="fuzzel" />
         </keybind>
 
-        <keybind key="C-Space">
+        <keybind key="S-Space">
         <action name="Execute" command="~/.config/scripts/tmux-sessions-fuzzel.sh" />
         </keybind>
 
