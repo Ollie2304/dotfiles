@@ -1,0 +1,8 @@
+[[mgr.prepend_keymap]]
+on   = ["c", "s"]
+run  = "plugin croc-send"
+desc = "Send files with croc"
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"

@@ -1,0 +1,12 @@
+[[plugin.deps]]
+use = "tasnimAlam/croc-send"
+rev = "d7197eb"
+hash = "99de22bf071e4737f8e9dbe146457e9c"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "598cdb6"
+hash = "e3260d0b1feded8c8e3ae3afa1169e30"
+
+[flavor]
+deps = []
