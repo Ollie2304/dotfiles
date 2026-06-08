@@ -1,3 +1,4 @@
 .config/mpv/fonts
 .config/mpv/script*
 .config/mpv/shaders
+.config/zsh/.zcompdump
