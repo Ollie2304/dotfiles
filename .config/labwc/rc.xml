@@ -17,16 +17,20 @@
             <action name="Execute" command="fuzzel" />
         </keybind>
 
+        <keybind key="C-Space">
+        <action name="Execute" command="~/.config/scripts/tmux-sessions-fuzzel.sh" />
+        </keybind>
+
         <keybind key="W-q">
             <action name="Close" />
         </keybind>
         <keybind key="W-S-s">
             <action name="Execute"
-                command="~/.config/labwc/custom/screenshot-region.sh" />
+                command="~/.config/scripts/screenshot-region.sh" />
         </keybind>
         <keybind key="W-C-s">
             <action name="Execute"
-                command="~/.config/labwc/custom/screenshot-edit.sh" />
+                command="~/.config/scripts/screenshot-edit.sh" />
         </keybind>
         <keybind key="W-v">
             <action name="Execute"
