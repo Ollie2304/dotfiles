@@ -1,5 +1,6 @@
 (defcfg
       process-unmapped-keys yes
+      linux-dev (/dev/input/event15 /dev/input/event20)
 )
 (defsrc
     esc caps
